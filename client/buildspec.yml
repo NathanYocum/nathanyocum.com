@@ -5,9 +5,9 @@ phases:
     runtime-versions:
       nodejs: 10
     commands:
+      - cd client
       - npm i
   build:
     commands:
-      - cd client
       - npm run lint
       - npm test
