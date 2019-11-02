@@ -8,5 +8,6 @@ phases:
       - npm i
   build:
     commands:
+      - cd client
       - npm run lint
       - npm test
