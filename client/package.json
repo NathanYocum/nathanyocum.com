@@ -44,9 +44,11 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "deploy": "npm run test && npm run build && aws s3 sync public/ s3://nathanyocum.com",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "deploy": "npm run test && npm run build && aws s3 sync public/ s3://nathanyocum.com",
+    "lint": "eslint src/",
+    "lint-fix": "eslint src/ --fix",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "jest",
