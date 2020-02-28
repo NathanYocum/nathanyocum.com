@@ -13,8 +13,11 @@ const App = ({ data }) => {
 };
 
 App.propTypes = {
-  // eslint-disable-next-line react/forbid-prop-types
-  data: PropTypes.any
+  data: PropTypes.shape({
+    site: PropTypes.shape({
+      siteMetadata: { title: PropTypes.string }
+    })
+  })
 };
 
 App.defaultProps = {
