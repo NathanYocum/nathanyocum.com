@@ -13,6 +13,7 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
+  ignorePatterns: ['artifacts/**'],
   rules: {
     'import/no-unresolved': 'off',
     'react/jsx-filename-extension': [
