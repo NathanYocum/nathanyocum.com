@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 type DF = React.FC<{ path?: String }>;
 const Dynamic: DF = () => (
@@ -7,4 +7,5 @@ const Dynamic: DF = () => (
     at runtime
   </div>
 );
+
 export default Dynamic;
